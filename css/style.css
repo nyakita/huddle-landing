@@ -16,69 +16,86 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-color: hsl(257, 40%, 49%);
-  padding:13em 15em;
-
+  /* padding:30em 10em; */
 }
 
 h1{
   font-family:"Poppins";
   font-weight: 600;
   color:#FFF;
+  font-size:2.5rem;
 }
 
 h2{
   font-family:"Poppins";
   font-weight:600;
   color:#FFF;
+  font-size:2.5rem;
 }
 
 .wrapper{
   display:grid;
   grid-template-columns:1fr 1fr;
-  grid-auto-rows: 6em;
+  grid-template-rows:.5fr 1.5fr .5fr .5fr .3fr;
   grid-template-areas:
-  "item1 ."
-  "item1 item2"
-  "item1 item2"
-  "item1 item3"
+  "item1  ."
+  "item2 item3"
+  ". item4"
+  ". item5"
   "footer footer";
+  grid-gap:7em;
 }
 
 .item1{
   grid-area:item1;
-  justify-self:center;
   align-self: center;
 }
 
 .item2{
   grid-area:item2;
-  justify-self:center;
   align-self: center;
-  width:.5fr;
+  justify-self:center;
 }
 
-.item2 p{
-  color:#fff;
-  line-height:1.7;
-}
+
 
 .item3{
   grid-area:item3;
+  align-self: flex-end;
+  justify-self:end;
+}
+
+.item4{
+  grid-area:item4;
+  align-self: center;
   justify-self:center;
 }
 
-.item3 img:hover{
+.item4 p{
+  color:#fff;
+  line-height:1.7;
+  font-size:1rem;
+}
+
+.item5{
+  grid-area:item5;
+  align-self: center;
+  justify-self:center;
+}
+
+
+.item6 img:hover{
   background-color:hsl(300, 69%, 71%);
 }
 
-.item3 img{
+.item6 img{
   background-color: hsl(257, 40%, 49%);
 }
 
-.mockUp{
+/* .mockUp{
   max-width:100%;
   max-height:100%;
-}
+} */
 
 
 footer{
@@ -88,6 +105,10 @@ footer{
 }
 
 button{
+  font-size:1.2rem;
+  padding:.7em 3em;
+  border-radius:2em;
+  border:none;
 }
 
 button:hover{

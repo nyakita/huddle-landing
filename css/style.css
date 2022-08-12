@@ -25,7 +25,7 @@ h1{
   font-weight: 600;
   color:#FFF;
   font-size:2.5rem;
-  margin-left:1rem;
+  margin-left:5rem;
   display:inline-block;
 }
 
@@ -39,7 +39,7 @@ h2{
 .wrapper{
   display:grid;
   grid-template-columns:1.5fr .8fr;
-  grid-template-rows:5em 20em 20em;
+  grid-template-rows:10% 25% 25%;
   grid-template-areas:
   "item1  ."
   "item2 item3"
@@ -73,7 +73,7 @@ h2{
 .item3 p{
   color:#fff;
   line-height:1.7;
-  font-size:1rem;
+  font-size:1.5rem;
 }
 
 .item4 img:hover{
@@ -86,8 +86,8 @@ h2{
 
 .mockUp{
   margin-top:20rem;
-  max-width:85%;
-  max-height:85%;
+  max-width:100%;
+  max-height:100%;
 }
 
 
@@ -112,7 +112,10 @@ button:hover{
     font-size:32px;
     position: relative;
     top:.8rem;
+    left:5rem;
 }
+
+
 
 @media screen and (max-width: 376px){
 
@@ -123,49 +126,49 @@ button:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: hsl(257, 40%, 49%);
-    height:100vh;
+    height:15vh;
     padding:0;
   }
   h1{
     font-family:"Poppins";
     font-weight: 600;
     color:#FFF;
-    font-size:1.5rem;
+    font-size:2rem;
     display:inline-block;
+    margin:0;
   }
 
   h2{
     font-family:"Poppins";
     font-weight:600;
     color:#FFF;
-    font-size:1.5rem;
+    font-size:2rem;
   }
 
   .wrapper{
     grid-template-columns:1fr;
-    grid-template-rows:2rem 35rem 20rem 4rem 4rem;
+    grid-template-rows:2rem 25rem 20rem 4rem 4rem;
     grid-template-areas:
     "item1"
     "item2"
     "item3"
     "item4"
     "footer";
-    height:50vh;
   }
 
   .item1{
     grid-area:item1;
-    margin:0;
   }
 
   .item2{
     grid-area:item2;
-    margin:0 auto;
   }
 
   .item3{
     grid-area:item3;
-    margin:0 auto;
+    align-self: center;
+    justify-self:center;
+    text-align: center;
   }
 
   .item4{
@@ -176,10 +179,21 @@ button:hover{
   footer{
     grid-area:footer;
     margin:0 auto;
+
   }
 
   .mockUp{
-    max-width:90%;
-    max-height:90%;
+    max-width:100%;
+    max-height:100%;
+    margin:0;
+  }
+
+  .item3 p {
+    line-height: 2;
+    font-size:1.1rem;
+  }
+
+  .huddle{
+    margin-left:10rem;
   }
 }

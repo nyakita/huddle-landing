@@ -16,8 +16,8 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-color: hsl(257, 40%, 49%);
-  padding:0 5em;
-  max-width:1440px;
+  padding:2em 5em;
+
 }
 
 h1{
@@ -25,8 +25,7 @@ h1{
   font-weight: 600;
   color:#FFF;
   font-size:2.5rem;
-  margin-left:5rem;
-  display:inline-block;
+  margin-left:1em;
 }
 
 h2{
@@ -38,18 +37,18 @@ h2{
 
 .wrapper{
   display:grid;
-  grid-template-columns:1.5fr .8fr;
-  grid-template-rows:10% 25% 25%;
+  grid-template-columns:1fr .7fr;
+  grid-template-rows:15em 20em 10em;
   grid-template-areas:
-  "item1  ."
+  "item1 ."
   "item2 item3"
-  "footer item4";
-  grid-gap:4em;
+  "item4 item4";
+  grid-gap:2em;
+  width:100%;
 }
 
 .item1{
   grid-area:item1;
-  margin-left:1rem;
 }
 
 .item2{
@@ -73,7 +72,7 @@ h2{
 .item3 p{
   color:#fff;
   line-height:1.7;
-  font-size:1.5rem;
+  font-size:1.3rem;
 }
 
 .item4 img:hover{
@@ -85,21 +84,14 @@ h2{
 }
 
 .mockUp{
-  margin-top:20rem;
-  max-width:100%;
-  max-height:100%;
+  max-width:80%;
+  max-height:80%;
 }
 
-
-footer{
-  grid-area:footer;
-  align-self:end;
-  justify-self:end;
-}
 
 button{
   font-size:1.2rem;
-  padding:.7em 3em;
+  padding:1em 4em;
   border-radius:2em;
   border:none;
   color:hsl(257, 40%, 49%)
@@ -107,12 +99,6 @@ button{
 
 button:hover{
   background-color:hsl(300, 69%, 71%);
-}
-.huddle{
-    font-size:32px;
-    position: relative;
-    top:.8rem;
-    left:5rem;
 }
 
 
@@ -147,13 +133,12 @@ button:hover{
 
   .wrapper{
     grid-template-columns:1fr;
-    grid-template-rows:2rem 25rem 20rem 4rem 4rem;
+    grid-template-rows:2rem 25rem 20rem 4rem;
     grid-template-areas:
     "item1"
     "item2"
     "item3"
-    "item4"
-    "footer";
+    "item4";
   }
 
   .item1{
@@ -174,12 +159,6 @@ button:hover{
   .item4{
     grid-area:item4;
     margin:0 auto;
-  }
-
-  footer{
-    grid-area:footer;
-    margin:0 auto;
-
   }
 
   .mockUp{
